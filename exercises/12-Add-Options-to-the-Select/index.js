@@ -4,11 +4,11 @@ let mySelect = document.querySelector("#mySelect");
 
 for (const country in countries) {
     if (Object.hasOwnProperty.call(countries, country)) {
-        const element = countries[country];
-        let elem = document.createElement("option");
-        elem.value = element;
-        elem.text = element;
-        mySelect.appendChild(elem);
+        const myOption = countries[country];
+        let element = document.createElement("option");
+        element.value = myOption;
+        element.text = myOption;
+        mySelect.appendChild(element);
     }
 }
 

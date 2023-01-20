@@ -41,12 +41,12 @@ describe('All the styles should be applied', function () {
     });
     afterEach(() => { jest.resetModules(); });
 
-    it('the background should be blue', function () {
+    it('the background should be gray', function () {
 
         // get computed styles of any element you like
         const body = document.querySelector('body');
         var styles = window.getComputedStyle(body);
-        expect(styles["background-color"]).toBe("blue");
+        expect(styles["background-color"]).toBe("gray");
     });
 });
 
